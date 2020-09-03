@@ -8,8 +8,6 @@ const db = require('./config/database');
 
 require('dotenv').config({path: 'variables.env'})
 
-
-
     db.authenticate()
     .then(() => console.log('DB Conectada'))
     .catch(error => console.log(error))
@@ -57,10 +55,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 //cargar las rutas
 app.use('/', routes());
 
-/*Puertos hijos para la app */
+/*Puertos y host para la app */
 const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 3000;
 
 app.listen(port, host, () => {
-   // console.log('El servidor esta funcionando');
-})
+    console.log('El servidor esta funcionando');
+});

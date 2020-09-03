@@ -28,7 +28,7 @@ CREATE TABLE `testimoniales` (
   `correo` varchar(60) DEFAULT NULL,
   `mensaje` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `testimoniales` (
 
 LOCK TABLES `testimoniales` WRITE;
 /*!40000 ALTER TABLE `testimoniales` DISABLE KEYS */;
-INSERT INTO `testimoniales` VALUES (1,'Yamilet','schery.schery_schery@hotmail.com','Super contenta con el trabajo realizado de esta agencia de viajes.'),(2,'Ashley','ashley050az@gmail.com','Muy genial la experiencia que vivi junto a mi familia conociendo lugares tan lindos en Europa, todo gracias a ustedes, que me ofrecieron el mejor precio del mercado y los mejores lugares, en mi siguiente experiencia que tengo pensada, ustedes seran la opcion a quien acudire nuevamente.'),(3,'Naomi','yamilet.schery05@gmail.com','Genial empresa, he estado compartiendo con ustedes tanto de cerca, asi como cliente tambien, super genial su trabajo, pero lo que mas me agrada es su servicio al cliente cuando surge un problema.'),(4,'Indiana','correo@correo.com','Me encanta los descuentos que ofrecen, por ustedes, fue que pude por primera vez, conocer mas alla de mis horizontes habitiales y rutinarios.'),(5,'Maria','correo@correo.com','Probando async await');
+INSERT INTO `testimoniales` VALUES (1,'Yamilet','schery.schery_schery@hotmail.com','Super contenta con el trabajo realizado de esta agencia de viajes.'),(2,'Ashley','ashley050az@gmail.com','Muy genial la experiencia que vivi junto a mi familia conociendo lugares tan lindos en Europa, todo gracias a ustedes, que me ofrecieron el mejor precio del mercado y los mejores lugares, en mi siguiente experiencia que tengo pensada, ustedes seran la opcion a quien acudire nuevamente.'),(3,'Naomi','yamilet.schery05@gmail.com','Genial empresa, he estado compartiendo con ustedes tanto de cerca, asi como cliente tambien, super genial su trabajo, pero lo que mas me agrada es su servicio al cliente cuando surge un problema.'),(4,'Indiana','correo@correo.com','Me encanta los descuentos que ofrecen, por ustedes, fue que pude por primera vez, conocer mas alla de mis horizontes habitiales y rutinarios.'),(5,'Maria','correo@correo.com','Probando async await'),(6,'Esther','esther@correo.com','provando bbdd');
 /*!40000 ALTER TABLE `testimoniales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-01 11:46:46
+-- Dump completed on 2020-09-03 14:57:02
