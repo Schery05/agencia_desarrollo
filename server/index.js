@@ -11,8 +11,8 @@ require('dotenv').config({path: 'variables.env'})
 
 
     db.authenticate()
-    //.then(() => console.log('DB Conectada'))
-    //.catch(error => console.log(error))
+    .then(() => console.log('DB Conectada'))
+    .catch(error => console.log(error))
 
 //Configurar Express
 const app = express();
