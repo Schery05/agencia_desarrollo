@@ -11,7 +11,6 @@ require('dotenv').config({path: 'variables.env'})
 
 
     db.authenticate()
-    .catch(error => console.log(error))
 
 //Configurar Express
 const app = express();
@@ -36,7 +35,7 @@ app.use((req, res, next) => {
     const fecha = new Date();
     res.locals.fechaActual = fecha.getFullYear();
     res.locals.ruta = req.path;
-        
+
     return next();
 })
 
