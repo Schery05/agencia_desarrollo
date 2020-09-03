@@ -11,7 +11,6 @@ require('dotenv').config({path: 'variables.env'})
 
 
     db.authenticate()
-    .then(() => console.log('DB Conectada'))
     .catch(error => console.log(error))
 
 //Configurar Express
@@ -37,8 +36,7 @@ app.use((req, res, next) => {
     const fecha = new Date();
     res.locals.fechaActual = fecha.getFullYear();
     res.locals.ruta = req.path;
-    console.log(res.locals);
-    
+        
     return next();
 })
 
@@ -62,5 +60,5 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 3000;
 
 app.listen(port, host, () => {
-    console.log('El servidor esta funcionando');
+
 })
