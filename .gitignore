@@ -1,5 +1,3 @@
 node_modules
 variables.env
 .DS_Store
-
-mysql://bd5c6d809bdf90:74d37668@us-cdbr-east-02.cleardb.com/heroku_4554143971c25e3?reconnect=true

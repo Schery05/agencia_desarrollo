@@ -16,3 +16,6 @@ module.exports = new Sequelize(process.env.BD_NOMBRE, process.env.BD_USER, proce
     }
     //operatorAliases: false
     })
+
+//mysql: bd5c6d809bdf90:74d37668@us-cdbr-east-02.cleardb.com/heroku_4554143971c25e3?reconnect=true
+//
