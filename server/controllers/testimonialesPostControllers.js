@@ -31,15 +31,23 @@ exports.testimonialesPost =  async(req, res) => {
             correo,
             mensaje
         })
-        .then(testimonial => res.redirect('/testimoniales'))
+        .then(testimoniales => res.redirect('/testimoniales'))
         .catch(error => console.log(error))    
     }
 }
 
 exports.testimoniales = async (req, res) => {
-    const testimonial = await Testimonial.findAll()
+    const testimoniales = await Testimonial.findAll()
          res.render('testimoniales', {
             pagina: 'Testimoniales',
-            testimonial
+            testimoniales
         })
+}
+
+exports.infoViajes = async (req, res) => {
+    const viajes = await Viaje.findAll()
+         res.render('viajes', {
+         pagina: 'Proximos Viajes',
+         viajes
+         });
 }
